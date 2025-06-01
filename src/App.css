@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -203,7 +204,7 @@ nav{
   padding-top: 100px;
   height: auto;
   width: 100%;
-  background-image: url('https://raw.githubusercontent.com/adrianhajdin/brainwave/73eaea5c1ce9543a0bb76858ec80e39d0201461f/src/assets/pricing/stars.svg'),url('https://ui8-brainwave-landing.herokuapp.com/_next/image?url=%2Fimages%2Fhero%2Fbackground.jpg&w=3840&q=100'),url('https://raw.githubusercontent.com/adrianhajdin/brainwave/73eaea5c1ce9543a0bb76858ec80e39d0201461f/src/assets/pricing/stars.svg');
+  background-image: url('./assets/pricing/stars.svg'),url('./assets/hero/hero-background.jpg');
    background-size: contain,cover;
   background-position: top ,top;
   background-repeat:no-repeat;
@@ -279,7 +280,7 @@ nav{
     height: clamp(400px,70vh,500px);
     width: clamp(300px,73%,1000px);
     border-radius: 8px;
-    background-image: url('https://github.com/adrianhajdin/brainwave/blob/main/src/assets/hero/robot.jpg?raw=true');
+    background-image: url('./assets/hero/robot.jpg');
     background-size: cover;
     background-position: center 28%;
     background-size: 108%;

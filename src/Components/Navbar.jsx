@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+import brainwave from '../assets/brainwave.svg'
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState("/");
@@ -10,7 +11,7 @@ const Navbar = () => {
     <nav>
         <div className="navbar">
             <div className="logo" onClick={()=> setIsOpen("/")}>
-                <img src="https://ui8-brainwave-landing.herokuapp.com/images/brainwave.svg" alt="" />
+                <img src={brainwave} alt="" />
             </div>
             <div className="mobile-sidebar" style={{display: baropen ? "block" : "none"}}>
               <ul>
