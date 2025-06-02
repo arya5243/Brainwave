@@ -1,8 +1,9 @@
 import React from 'react'
 import { motion, scale } from 'motion/react'
-import loading from '../assets/loading.png'
 import yourlogo from '../assets/yourlogo.svg'
 import curve from '../assets/hero/curve.png'
+import Generating from './Generating'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -10,11 +11,11 @@ const Hero = () => {
         <div className="hero-text">
             <h1 > Explore the Possibilities <br /> of AI Chatting with <span> Brainwave <img src={curve}/></span></h1>
             <p>Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app.</p>
-            <motion.button scale={1}  whileTap={{scale:1.1}} >GET STARTED</motion.button>
+            <Link to='/pricing'><motion.button scale={1}  whileTap={{scale:1.1}} >GET STARTED</motion.button></Link>
         </div>
         
         <div className="hero-img gradient">
-          <span><img src={loading} alt="" />AI is generating!</span>
+          <Generating />
         </div>
         <div className="hero-desc">
           <h5>Helping people create beautiful content at</h5>

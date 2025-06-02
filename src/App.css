@@ -15,8 +15,8 @@
         &::after{
           content: '';
           position: absolute;
-          height: 115%;
-          width: 108%;
+          height: 110%;
+          width: 105%;
           border-radius: inherit;
           background-color: red;
           background-image: linear-gradient(to bottom right ,rgb(0, 218, 0),rgb(218, 0, 218),rgb(255, 255, 84),rgb(255, 175, 189));
@@ -43,6 +43,9 @@
 nav{
   .logo{
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .navbar{
     font-family: "Source code Pro", monospace;
@@ -52,23 +55,26 @@ nav{
     backdrop-filter: blur(4px);
     z-index: 1000;
     height: 5.2rem;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid hsla(0, 0%, 100%, .1);
-    padding: 5px  2.5rem;
+    padding: 5px  2.8rem;
     .mobile-sidebar{
       position: absolute;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 40px;
       flex-direction: column;
       width: 100%;
-      background-color: black;
+      background-color: #000000;
+      background-image: url('./assets/pricing/stars.svg'),url('./assets/hero/hero-background.jpg');
+      background-position: 20% center, center 60% ;
+      background-size: 200% , 140%;
+      background-repeat: no-repeat;
       top: 100%;
       display: none;
       right: 0;
@@ -85,48 +91,28 @@ nav{
         li{
           cursor: pointer;
           font-size: 1.5rem;
+          text-transform: uppercase;
           padding: 20px 0;
           transition: 0.3s ease-out;
           text-underline-offset: 6px;
+          color: white;
            &:hover{
             color: rgb(139, 0, 194);
           }
           
         }
       }
-        .signup{
-          background-color: transparent;
-          border: none;
-          font-size: 0.9rem;
-          cursor: pointer;
-        font-size: 1.6rem;
-          font-family: "Source code Pro", monospace;
-          font-weight: 600;
-          transition: 0.3s ease-out;
-            &:hover{
-            color: rgb(139, 0, 194);
-              
-            }
-        }
-        .login{
-          padding: 11px 25px;
-          cursor: pointer;
-          background-color: transparent;
-          font-family: "Source code Pro", monospace;
-          font-weight: 600;
-          border: none;
-          font-size: 1.6rem;
-
-          transition: 0.3s ease-out;
-
-          &:hover{
-            color: rgb(139, 0, 194);
-            
-          }
-        }
       
     }
+    a{
+      text-decoration: none;
+
+    }
     .link-go{
+      a{
+        color: hsla(0, 0%, 100%, .5);
+
+      }
       ul{
         display: flex;
         font-family: "Source code Pro", monospace;
@@ -141,6 +127,7 @@ nav{
           height: 100%;
           transition: 0.3s ease-out;
           text-underline-offset: 6px;
+          text-transform: uppercase;
            &:hover{
             color: white;
           }
@@ -150,15 +137,26 @@ nav{
       }
     
     .login-signup{
+      
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 30px;
+      padding:  5px ;
+      margin-right: 6px;
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        text-transform: uppercase;
+       gap: 34px;
+
+      }
       .signup{
         color:hsla(0, 0%, 100%, .5);
         background-color: transparent;
         border: none;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         cursor: pointer;
         font-family: "Source code Pro", monospace;
         font-weight: 600;
@@ -171,16 +169,18 @@ nav{
       }
       .login{
         position: relative;
-        padding: 11px 25px !important;
+        padding: 12px 25px !important;
         cursor: pointer;
         background-color: rgb(0, 0, 0);
-        border-radius: 15px ;
+        border-radius: 10px ;
         font-family: "Source code Pro", monospace;
         font-weight: 600;
         border: none;
         display: flex;
+        font-size: 0.8rem;
         align-items: center;
         justify-content: center;
+        color: white;
         transition: 0.3s ease-out;
         &:hover{
           color: hsla(0, 0%, 100%, .5);
@@ -195,14 +195,14 @@ nav{
         border: none;
         text-align: center;
         cursor: pointer;
-        border-radius: 8px;
+        border-radius: 12px;
         background-color: black;
-        padding: 4px;
+        padding: 6px 8px;
         .menu{
           text-align: center;
-          font-size: 2.3rem;
+          font-size: 2.2rem;
           color: white;
-          font-weight: 700;
+          font-weight: 800;
           z-index: 100;
         }
       }
@@ -350,7 +350,7 @@ nav{
 }
 .features{
   bottom: 0;
-  padding-top: 90px;
+  padding-top: 80px;
   padding-left: 20px;
   padding-right: 5px;
   width: 100%;
