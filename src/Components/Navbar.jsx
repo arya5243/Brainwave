@@ -33,10 +33,10 @@ const Navbar = () => {
             </div>
             <div className="login-signup">
                     <button className='signup'>NEW ACCOUNT</button>
-                    <button className='login'><span>SIGN IN</span></button>
+                    <button className='login gradient2'><span>SIGN IN</span></button>
             </div>
             <div className="menu-btn" >
-                <button onClick={()=> setBarOpen(!baropen)}>{baropen ? <IoClose className='menu gradient'/> : <IoMenu className='menu'/>}</button>
+                <button onClick={()=> setBarOpen(!baropen)} className='gradient2'>{baropen ? <IoClose className='menu'/> : <IoMenu className='menu'/>}</button>
             </div>
         </div>
     </nav>

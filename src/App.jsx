@@ -7,7 +7,7 @@ import { motion } from "motion/react"
 
 const App = () => {
   return (
-    <motion.div className='main-cont' initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
+    <motion.div className='main-cont' initial={{ scale: 0.8 }} animate={{ scale: 1 }}>
       <Navbar/>
       <Hero/>
       <Features/>

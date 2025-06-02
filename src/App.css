@@ -7,7 +7,22 @@
   -webkit-user-drag: none;
 
 }
-
+.gradient2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        &::after{
+          content: '';
+          position: absolute;
+          height: 115%;
+          width: 108%;
+          border-radius: inherit;
+          background-color: red;
+          background-image: linear-gradient(to bottom right ,rgb(0, 218, 0),rgb(218, 0, 218),rgb(255, 255, 84),rgb(255, 175, 189));
+          z-index: -1;
+        }
+}
 .font-hover{
    &:hover{
             color: white;
@@ -21,6 +36,8 @@
   justify-content: center;
   width: clamp(auto,100vh,2000px);
   max-width: 1500px;
+  scrollbar-width: none;
+
 
 }
 nav{
@@ -168,16 +185,6 @@ nav{
         &:hover{
           color: hsla(0, 0%, 100%, .5);
         }
-        &::after{
-          content: '';
-          position: absolute;
-          height: 115%;
-          width: 105%;
-          border-radius: inherit;
-          background-color: red;
-          background-image: linear-gradient(to bottom right ,rgb(0, 218, 0),rgb(218, 0, 218),rgb(255, 255, 84),rgb(255, 175, 189));
-          z-index: -1;
-        }
       }
       
     }
@@ -188,13 +195,15 @@ nav{
         border: none;
         text-align: center;
         cursor: pointer;
-        
         border-radius: 8px;
+        background-color: black;
+        padding: 4px;
         .menu{
           text-align: center;
           font-size: 2.3rem;
           color: white;
           font-weight: 700;
+          z-index: 100;
         }
       }
       }

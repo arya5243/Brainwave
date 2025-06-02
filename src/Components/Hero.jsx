@@ -6,7 +6,7 @@ import curve from '../assets/hero/curve.png'
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" loading="lazy" >
         <div className="hero-text">
             <h1 > Explore the Possibilities <br /> of AI Chatting with <span> Brainwave <img src={curve}/></span></h1>
             <p>Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app.</p>
