@@ -2,7 +2,7 @@ import React from 'react'
 import "./App.css"
 import Navbar from './Components/Navbar.jsx'
 import Hero from './Components/Hero.jsx'
-import Features from './Components/Features.jsx'
+import Benefits from './Components/Benefits.jsx'
 import { motion } from "motion/react"
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     <motion.div className='main-cont' initial={{ scale: 0.8 }} animate={{ scale: 1 }}>
       <Navbar/>
       <Hero/>
-      <Features/>
+      <Benefits/>
     </motion.div>
   )
 }

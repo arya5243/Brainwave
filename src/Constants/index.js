@@ -278,7 +278,7 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
+    title: "Ask Anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
@@ -286,7 +286,7 @@ export const benefits = [
   },
   {
     id: "5",
-    title: "Improve everyday",
+    title: "Improve Everyday",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
