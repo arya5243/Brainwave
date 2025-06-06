@@ -1,3 +1,4 @@
+@import "tailwindcss";
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
@@ -15,4 +16,5 @@ body,html{
   color: #ffffff;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
